@@ -331,7 +331,7 @@ input:focus, button:focus, a:focus {
   .mining {
     position: absolute;
     top: -250px;
-    right: 1050px;
+    right: 50%;
     width: 250px;
   }
 
