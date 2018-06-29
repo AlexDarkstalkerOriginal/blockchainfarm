@@ -1,0 +1,433 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Jua', sans-serif;
+  line-height: 1.4;
+  font-size: 18px;
+  color: #fff;    
+  background-size: contain;
+  background: url('../img/bg.png');
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p, h1, h2, h3, h4, h5, span {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+} 
+
+h1, h2, h3, h4, h5 {
+  color: #fff;
+}
+
+input, button {
+  font-family: 'Jua', sans-serif;
+}
+
+input:focus, button:focus, a:focus {
+  outline: unset;
+}
+
+.content {
+  position: relative;
+}
+
+/*грядка*/
+  .element {
+    display: inline-block;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .element:hover {
+    opacity: .6;
+  }
+
+  .element:nth-child(2) {    
+    margin-left: -75px;
+    transform: translateY(45%);
+  }
+  
+  .element:nth-child(3) {    
+    margin-left: -75px;
+    transform: translateY(90%);
+  }    
+
+  .element:nth-child(4) {    
+    margin-left: -75px;
+    transform: translateY(133%);
+  }    
+
+  .element:nth-child(5) {    
+    margin-left: -75px;
+    transform: translateY(174%);
+  } 
+
+  .element:nth-child(6) {    
+    margin-left: -75px;
+    transform: translateY(216%);
+  } 
+
+  .element:nth-child(7) {    
+    margin-left: -75px;
+    transform: translateY(259%);
+  }    
+
+  .row_element {
+    display: block;    
+    margin: -10px
+  }
+
+  .row_element:nth-child(2) {
+    margin-top: -43px;
+    margin-left: -75px;
+  }
+
+  .row_element:nth-child(3) {
+    margin-top: -43px;
+    margin-left: -140px;
+  }
+
+  .row_element:nth-child(4) {
+    margin-top: -43px;
+    margin-left: -205px;
+  }
+
+  .field {
+    width: 600px;
+    margin: 400px 0 0 500px;
+    height: 400px;
+    position: relative;
+  }
+/*грядка*/
+
+/*попапы*/
+  #plants, #faq, #about, #transaction, #ranked, #hashrate_popup, #error_msg {
+    background: #95d34a;
+    width: 1100px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .mfp-fade h1 {
+    text-align: center;
+  }
+/*попапы*/
+
+/*игрок*/
+  .user_info {
+    background: rgba(0,0,0,.4);
+    width: 360px;
+    padding: 15px 30px 15px 20px;
+    position: absolute;
+    top: -350px;
+    left: 30px;
+    font-size: 24px;
+  }    
+
+  .user_info .value {
+    color: #ff6000;
+    font-weight: 900;
+    font-size: 34px;
+  }
+
+  .owner .value {
+    font-size: 14px;
+  }
+/*игрок*/
+
+/*plants*/
+  .rostok {
+    position: absolute;
+    left: 40px;
+    top: 0;
+  }
+
+  .rostok_1 {
+    position: absolute;
+    left: 55px;
+    top: 15px;
+  }
+
+  .rostok_2 {
+    position: absolute;
+    left: 55px;
+    width: 35px;
+  }
+
+  .rostok_3 {
+    position: absolute;
+    left: 50px;
+    width: 35px;
+  }
+
+  .rostok_4 {
+    position: absolute;
+    left: 50px;
+    width: 35px;
+    top: -10px;
+  }
+
+  .plant {
+    position: absolute;
+    left: 20px;
+    top: -60px;
+  }
+
+  .plant_1 {
+    position: absolute;
+    left: 20px;
+    top: -55px;
+    width: 90px;
+  }
+
+  .plant_2 {
+    position: absolute;
+    left: 15px;
+    top: -100px;
+    width: 110px;
+  }
+
+  .plant_3 {
+    position: absolute;
+    left: 30px;
+    top: 7px;
+    width: 80px;
+  }
+
+  .plant_4 {
+    position: absolute;
+    left: 20px;
+    top: -30px;
+    width: 90px;
+  }
+/*plants*/
+
+/*popup*/
+  #plants .element {
+    transform: unset;
+    margin-left: unset;
+    margin-right: 51px;    
+    vertical-align: top;
+  }
+
+  #plants .row .element:first-child {
+    margin-left: 50px;
+  }
+
+  #plants .row .element:last-child {
+    margin-right: 0;
+  }
+
+  #plants .row {
+    margin-top: 140px;
+  }
+
+  #plants .element {
+    font-size: 14px;
+  }
+
+  #plants .element .name {
+    font-size: 18px;
+    color: #1612a9;
+  }
+
+  #plants .element .value { 
+    color: #1612a9;
+  }
+
+  #plants .element button {
+    font-family: 'Jua', sans-serif;
+    background: #1613A9;
+    color: #fff;    
+    border: none;
+    font-size: 16px;
+    width: 110px;
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  #plants .element .params {
+    width: 110px;
+    margin: 5px auto;
+    display: block;
+  }
+/*popup*/
+
+/*transaction*/
+  .status_trans, .hash {
+    display: inline-block;
+  }
+/*transaction*/
+
+  .add {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    animation: animateElement linear .5s;
+  }
+
+  @keyframes animateElement{
+    0% {
+      opacity:0;
+      transform:  translate(100px, 0px);
+    }
+    100% {
+      opacity:1;
+      transform:  translate(0px, 0px);
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: -350px;
+    right: 80px;    
+  }
+  .nav a {
+    color: blue;
+    margin-left: 20px;
+  }
+  
+  #ranked .user_info {
+    position: relative;
+    top: unset;
+    left: unset;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 6.5px;
+  }
+
+  #ranked h1 {
+    margin-bottom: 40px;
+  }
+
+  .blocked {
+    position: relative;
+    opacity: .7;
+  }
+  .blocked:after {    
+    position: absolute;
+    content: 'blocked';
+    top: 15px;
+    left: 0;    
+    left: 45px;
+    background: rgba(56, 56, 60, .7);
+    padding: 3px;
+    font-size: 14px;
+  }
+
+  .mining {
+    position: absolute;
+    top: -250px;
+    right: 1050px;
+    width: 250px;
+  }
+
+  .mining img {
+    width: 100%;
+  }
+
+  .hashrate {
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,.5);
+    padding: 10px 20px;
+    right: -212px;
+  }
+
+  .current_gold {
+    position: absolute;
+    top: 130px;
+    background: rgba(0,0,0,.5);
+    padding: 10px 20px;
+    right: -220px;
+    width: 247px;
+  }
+
+  .mining .up_hashrate, .mining .withdraw {    
+    font-family: 'Jua', sans-serif;
+    background: #ff6000;
+    color: #fff;    
+    border: none;
+    font-size: 16px;      
+    border-radius: 4px;      
+    cursor: pointer;
+    padding: 3px 20px;
+  }
+
+  .coins {
+    width: 20px !important;
+  }
+
+  .blocked_mining .current_gold, .blocked_mining .hashrate {
+    display: none;
+  }
+
+  .blocked_mining:after {
+    content: 'available at lvl 6';
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 15px;
+    left: 50px;
+    text-align: center;
+    padding-top: 100px;
+  } 
+
+  .hashrate a {
+    line-height: 2;
+  }
+  
+  #error_msg .ok {
+    font-family: 'Jua', sans-serif;
+    background: #1613A9;
+    color: #fff;    
+    border: none;
+    font-size: 16px;
+    width: 110px;
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+    
+  .up_hashrate {
+    margin: 5px 0;
+  }
+
+  .mining .withdraw {
+    margin-left: 10px;
+  }
+
+
+  #error_msg .ok {
+    font-family: 'Jua', sans-serif;
+    background: #ff6000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    width: 110px;
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 30px auto 0 auto;
+    display: block;
+  }
+
+  .disabled {
+    opacity: .4;
+  }

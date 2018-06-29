@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Happy Ferma</title>	
+</head>    
+
+<body>		
+	<div class="content app">
+
+		<div class="field">
+			<div class="row_element">
+				<div data-id='3' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='7' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='11' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='15' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='19' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='23' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='27' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+			</div>
+			<div class="row_element">
+				<div data-id='2' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='6' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='10' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='14' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='18' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='22' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='26' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+			</div>
+			<div class="row_element">
+				<div data-id='1' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='5' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='9' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='13' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='17' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='21' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='25' class="element"><img src="img/ferm.png" alt=""><span></span></div>				
+			</div>
+			<div class="row_element">
+				<div data-id='0' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='4' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='8' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='12' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='16' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='20' class="element"><img src="img/ferm.png" alt=""><span></span></div>
+				<div data-id='24' class="element"><img src="img/ferm.png" alt=""><span></span></div>				
+			</div>
+		</div>
+
+		<div class="user_info">
+			<div class="lvl"><span class="value">{{lvl}}</span> lvl</div>
+			<div class="exp">exp: <span class="value">{{current}}/{{exp}}</span></div>			
+			<div class="balance">balance: <span class="value">{{balance}}</span></div>
+			<div class="balance">cash: <span class="value">{{cash}}</span></div>
+			<div class="owner">adress: <div class="value">{{owner}}</div></div>
+			<div class="add">
+				<div class="exp_new"><span class="value">{{new_exp}}</span></div>
+				<div class="balance_new"><span class="value">{{new_balance}}</span></div>
+			</div>						
+		</div>		
+
+		<div class="nav">
+			<a href="#ranked" class="popup ranked">Ranked</a>
+			<a href="#faq" class="popup">Faq</a>
+			<a href="#about" class="popup">Contact</a>
+		</div>
+
+		<a href="#plants" class="plants popup" style="position: absolute; width: 0.1px; opacity: .1"></a>		
+		<div id="plants" class="mfp-fade mfp-hide">
+			<h1>Select the right plant for planting</h1>
+			<div class="row">
+				<div class="element">
+					<img src="img/ferm.png" alt=""><img src="img/plant.png" alt="" class="plant">					
+					<div class="params">
+						<div class="name">Orange tree</div>
+						<div class="buy">buy: <span class="value">30</span></div>
+						<div class="sell">sell: <span class="value">105</span></div>					
+						<div class="exp">exp: <span class="value">1</span></div>
+						<div class="time">growth: <span class="value">12 min</span></div>
+						<button data-plant="0" class="buy">Plant</button>
+					</div>
+				</div>
+				<div class="element">					
+						<img src="img/ferm.png" alt=""><img src="img/plant_1.png" alt="" class="plant_1">
+					<div class="params">
+						<div class="name">White flowers</div>
+						<div class="buy">buy: <span class="value">25</span></div>
+						<div class="sell">sell: <span class="value">88</span></div>					
+						<div class="exp">exp: <span class="value">2</span></div>
+						<div class="time">growth: <span class="value">48 min</span></div>
+						<button data-plant="1" class="buy">Plant</button>
+					</div>
+				</div>
+				<div class="element">					
+						<img src="img/ferm.png" alt=""><img src="img/plant_2.png" alt="" class="plant_2">
+					<div class="params">
+						<div class="name">Tall tree</div>
+						<div class="buy">buy: <span class="value">13</span></div>
+						<div class="sell">sell: <span class="value">61</span></div>					
+						<div class="exp">exp: <span class="value">1</span></div>
+						<div class="time">growth: <span class="value">12 min</span></div>
+						<button data-plant="2" class="buy">Plant</button>
+					</div>
+				</div>
+				<div class="element">					
+						<img src="img/ferm.png" alt=""><img src="img/plant_3.png" alt="" class="plant_3">
+					<div class="params">
+						<div class="name">Pickles</div>
+						<div class="buy">buy: <span class="value">70</span></div>
+						<div class="sell">sell: <span class="value">162</span></div>					
+						<div class="exp">exp: <span class="value">4</span></div>
+						<div class="time">growth: <span class="value">24 min</span></div>
+						<button data-plant="3" class="buy">Plant</button>
+					</div>
+				</div>
+				<div class="element">					
+						<img src="img/ferm.png" alt=""><img src="img/plant_4.png" alt="" class="plant_4">
+					<div class="params">
+						<div class="name">Veget palm</div>
+						<div class="buy">buy: <span class="value">20</span></div>
+						<div class="sell">sell: <span class="value">107</span></div>					
+						<div class="exp">exp: <span class="value">1</span></div>
+						<div class="time">growth: <span class="value">24 min</span></div>
+						<button data-plant="4" class="buy">Plant</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mining">
+			<img src="img/mining.png">
+			<div class="hashrate">
+				Income: {{income}} gold/day				
+					<div>
+						<button class="up_hashrate">+1 GPU (+150 gold/day)</button><br>cost: 1488 
+						<img src="img/coins.png" class="coins">
+					</div>
+			</div>
+			<div class="current_gold">
+				{{farm_gold}} <img src="img/coins.png" class="coins">				
+				<button class="withdraw">Withdraw</button>
+			</div>
+		</div>
+
+		<div id="faq" class="mfp-fade mfp-hide">
+			<div class="container_faq">
+				<h1>How to play</h1>								
+			</div>
+		</div>
+
+		<div id="ranked" class="mfp-fade mfp-hide">			
+			<h1>Ranked</h1>		
+			
+			<ranked
+				v-for="user in ranked"	
+				v-bind:id="user.id"			  
+				v-bind:lvl="user.lvl"	
+				v-bind:owner="user.owner"	
+			><ranked>
+		</div>
+
+		<div id="about" class="mfp-fade mfp-hide">
+			<h1>Contact</h1>
+			<span>E-mail: 
+				<a href="mailto:alexdarkstalkeroriginal@gmail.com">alexdarkstalkeroriginal@gmail.com</a>
+			</span>
+		</div>
+	</div>
+	
+	<a href="#transaction" class="transaction" style="position: absolute; width: 0.1px; opacity: .1"></a>	
+	<div id="transaction" class="mfp-hide mfp-fade">
+		<p>Transaction is <span class="status_trans"></span></p>
+		<!-- <img src="img/pending.gif" alt=""> -->
+		<div class="hash"></div>			
+	</div>
+
+	<a href="#error_msg" class="popup error_msg" style="position: absolute; width: 0.1px; opacity: .1"></a>	
+	<div id="error_msg" class="mfp-hide mfp-fade">
+		<h1>You don't have enough gold</h1>
+		<button class="ok">Ok</button>
+	</div>
+	
+	<div class="noExtension" style="display: none"> 
+		NOTE: Please install <a target="_blank" href="https://chrome.google.com/webstore/detail/nasextwallet/gehjkhmhclgnkkhpfamakecfgakkfkco">WebExtensionWallet</a>  to use TheMonsters
+	</div>
+	<div class="errNetwork" style="display: none">
+		NOTE: Sorry, you use incorrect net
+	</div>	
+
+	<script src='lib/jquery-3.3.1.min.js'></script>
+	<link rel="stylesheet" href="lib/main.css">	
+	<link rel="stylesheet" href="lib/magnific-popup.css">    	
+	<script src="lib/vue.min.js"></script>
+	<script src='lib/nebPay.js'></script>    	
+    <script src='lib/nebulas.js'></script>
+    <script src='lib/jquery.magnific-popup.js'></script>
+    <script src="lib/common.js"></script>            
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+</body>
+</html>
