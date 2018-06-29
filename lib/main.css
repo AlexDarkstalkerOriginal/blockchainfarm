@@ -331,7 +331,7 @@ input:focus, button:focus, a:focus {
   .mining {
     position: absolute;
     top: -250px;
-    right: 45%;
+    right: 1050px;
     width: 250px;
   }
 
@@ -377,7 +377,7 @@ input:focus, button:focus, a:focus {
 
   .blocked_mining:after {
     content: 'available at lvl 6';
-    background: rgba(0,0,0,.2);
+    background: rgba(0,0,0,.5);
     position: absolute;
     height: 150px;
     width: 150px;
